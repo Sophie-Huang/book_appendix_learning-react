@@ -5,9 +5,10 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
 
-	"mounts": [
-		"source=/Users/sophiehuang/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
-	]
+    "mounts": [
+        "source=/Users/sophiehuang/.ssh,target=/home/node/.ssh,type=bind,consistency=cached",
+        "source=/Users/sophiehuang/devlab/proj_js/learning-react,target=${containerWorkspaceFolder}/learning-react,type=volume"
+    ],
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
