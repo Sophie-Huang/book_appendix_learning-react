@@ -1,0 +1,28 @@
+{
+  "name": "learning-react",
+  "version": "1.0.0",
+  "description": "This repository contains the files for the book _Learning React_ by [Alex Banks](https://twitter.com/moontahoe) and [Eve Porcello](https://twitter.com/eveporcello) of [Moon Highway](https://moonhighway.com).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "serve": "^14.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
+    "@babel/preset-react": "^7.25.7",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
