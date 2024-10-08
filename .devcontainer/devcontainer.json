@@ -5,9 +5,23 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
 
-    "mounts": [
-        "source=/Users/sophiehuang/.ssh,target=/home/node/.ssh,type=bind,consistency=cached",
-    ],
+	"mounts": [
+		"source=/Users/sophiehuang/.ssh,target=/home/node/.ssh,type=bind,consistency=cached"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"mikestead.dotenv",
+				"EditorConfig.EditorConfig",
+				"xabikos.JavaScriptSnippets",
+				"Orta.vscode-jest",
+				"christian-kohler.npm-intellisense",
+				"esbenp.prettier-vscode",
+				"humao.rest-client",
+				"redhat.vscode-yaml"
+			]
+		}
+	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
